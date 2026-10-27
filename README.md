@@ -14,20 +14,70 @@
 
 **Reel Radar** هي أداة احترافية تعمل محلياً (Local-First) لاكتشاف مقاطع ريلز إنستغرام الفيروسية (Breakout Reels)، ومراقبة حسابات المنافسين، والبحث بالكلمات المفتاحية أو الهاشتاجات، وتحليل المحتوى بالذكاء الاصطناعي مع واجهة ويب تفاعلية وتقارير مفصلة.
 
+> 💡 **صُمم هذا المشروع ليعمل بشكل فوري وتلقائي عبر المساعدات البرمجية الذكية (`Claude Code` و `OpenAI Codex`)** — لا تحتاج لأي خبرة برمجية أو كتابة أوامر معقدة، فقط انسخ أمراً واحداً والصقه في **Claude Code** أو **Codex** وسيتكفل الذكاء الاصطناعي بتحميل المشروع وتثبيته وتشغيله لك بالكامل!
+
 ---
 
 ## 📌 فهرس المحتويات
-1. [ما الذي تقدمه الأداة؟](#-1-ما-الذي-تقدمه-الأداة)
-2. [التشغيل الذكي والسريع عبر Claude Code أو Codex](#-2-التشغيل-الذكي-والسريع-عبر-claude-code-أو-codex)
-3. [التشغيل العادي بضغطة واحدة (بدون أوامر معقدة)](#-3-التشغيل-العادي-بضغطة-واحدة)
-4. [طريقة استخراج مفتاح Apify بالصور (خطوة بخطوة)](#-4-طريقة-استخراج-مفتاح-apify-بالصور-خطوة-بخطوة)
-5. [طريقة تركيب مفتاح Apify داخل الأداة (طريقتان سهلتان)](#-5-طريقة-تركيب-مفتاح-apify-داخل-الأداة)
-6. [شرح استخدام واجهة الويب (Dashboard)](#-6-شرح-استخدام-واجهة-الويب-dashboard)
-7. [التقارير التلقائية ومخرجات النظام](#-7-التقارير-التلقائية-ومخرجات-النظام)
+1. [🤖 الطريقة الأساسية للتشغيل: عبر Claude Code أو Codex (بدون أي أوامر يدوية)](#-1-الطريقة-الأساسية-للتشغيل-عبر-claude-code-أو-codex)
+2. [🚀 ما الذي تقدمه الأداة؟](#-2-ما-الذي-تقدمه-الأداة)
+3. [🔑 طريقة استخراج مفتاح Apify بالصور (خطوة بخطوة)](#-3-طريقة-استخراج-مفتاح-apify-بالصور-خطوة-بخطوة)
+4. [🛠️ طريقة تركيب مفتاح Apify داخل الأداة](#-4-طريقة-تركيب-مفتاح-apify-داخل-الأداة)
+5. [🖥️ شرح استخدام واجهة الويب (Dashboard)](#-5-شرح-استخدام-واجهة-الويب-dashboard)
+6. [📊 التقارير التلقائية ومخرجات النظام](#-6-التقارير-التلقائية-ومخرجات-النظام)
 
 ---
 
-## 🚀 1. ما الذي تقدمه الأداة؟
+## 🤖 1. الطريقة الأساسية للتشغيل: عبر Claude Code أو Codex
+
+هذا النظام مزود بملفات توجيه ذكية مدمجة ([`CLAUDE.md`](./CLAUDE.md) و [`AGENTS.md`](./AGENTS.md)) تجعل كلاً من **Claude Code** و **OpenAI Codex** يفهمان المشروع ويشغلانه لك تلقائياً من الألف إلى الياء.
+
+### ⭐ الخيار الأول: التشغيل من الصفر (دون أن تحمل أي ملفات بيدك)
+افتح **Claude Code** (عبر كتابة `claude` في الطرفية) أو **OpenAI Codex** (عبر كتابة `codex`) أو أي محرر ذكي، ثم **انسخ هذا الأمر والصقه مباشرة**:
+
+```text
+قم بتحميل مشروع Reel Radar من الرابط https://github.com/samerquta/reel-radar.git ثم ادخل إلى المجلد وثبّت الحزم اللازمة وشغّل النظام على المنفذ 3000 وافتح لي الرابط http://127.0.0.1:3000 في المتصفح.
+```
+
+**ماذا سيفعل كلود كود أو كوديكس تلقائياً؟**
+1. سيقوم بنسخ المشروع من GitHub إلى جهازك ← تثبيت جميع الحزم البرمجية تلقائياً ← تشغيل السيرفر المحلي ← فتح لوحة التحكم أمامك على الرابط **[http://127.0.0.1:3000](http://127.0.0.1:3000)**.
+
+---
+
+### ⭐ الخيار الثاني: إذا قمت بتحميل مجلد المشروع مسبقاً
+إذا كان المجلد موجوداً على جهازك، افتح **Claude Code** أو **Codex** داخل المجلد واكتب له جملة واحدة فقط بالعربية أو الإنجليزية:
+
+```text
+شغل النظام
+```
+أو:
+```text
+run the project
+```
+
+*(كما يمكنك أن تطلب من كلود أو كوديكس تركيب المفتاح لك مباشرة بكتابة: `ضع هذا المفتاح في النظام: apify_api_xxxx` وسيقوم بحفظه وتفعيله فوراً!).*
+
+---
+
+<details>
+<summary><strong>💻 (اختياري) اضغط هنا إذا أردت التشغيل اليدوي التقليدي بدون Claude أو Codex</strong></summary>
+
+<br/>
+
+تحتاج فقط إلى وجود **[Node.js](https://nodejs.org/)** مثبت على جهازك:
+- **أمر واحد ينسخ المشروع ويشغله فوراً (Mac / Linux):**
+  ```bash
+  git clone https://github.com/samerquta/reel-radar.git && cd reel-radar && ./start.sh
+  ```
+- **من داخل المجلد (Mac / Linux):** شغّل `./start.sh`
+- **على نظام Windows:** انقر نقراً مزدوجاً على ملف `start.bat`
+- **أو عبر `pnpm`:** شغّل `pnpm install && pnpm dev` ثم افتح `http://127.0.0.1:3000`.
+
+</details>
+
+---
+
+## 🚀 2. ما الذي تقدمه الأداة؟
 
 - **اكتشاف الفيديوهات الضاربة (Outlier Detection):** حساب متوسط مشاهدات كل صانع محتوى ومقارنة كل ريلز جديد بأدائه المعتاد لاكتشاف الفيديوهات التي حققت قفزة غير عادية (مثلاً `5x` أو `10x` ضعف مشاهداته المعتادة).
 - **البحث بالكلمات المفتاحية والهاشتاجات:** جلب أحدث وأقوى الريلز في أي مجال (مثل: `ai`, `claude`, `chatgpt`, `motion`) أو من حسابات محددة (مثل: `@github`, `@vercel`).
@@ -36,52 +86,7 @@
 
 ---
 
-## 🤖 2. التشغيل الذكي والسريع عبر Claude Code أو Codex
-
-إذا كنت تستخدم **Claude Code** أو **OpenAI Codex CLI** (أو أي مساعد برمجي ذكي مثل Cursor / Antigravity)، لا تحتاج لكتابة أي أوامر يدوية! فقط انسخ الأمر (Prompt) التالي والصقه ليتولى المساعد تحميل المشروع وتثبيت الحزم وتشغيل الواجهة لك تلقائياً:
-
-### 📋 انسخ هذا الأمر والصقه مباشرة داخل Claude Code أو Codex:
-```text
-قم بتحميل مشروع Reel Radar من الرابط https://github.com/samerquta/reel-radar.git ثم ادخل إلى المجلد وثبّت الحزم وشغّل النظام على المنفذ 3000 وافتح لي الرابط في المتصفح.
-```
-
-*(أو إذا قمت بتحميل المجلد مسبقاً على جهازك، افتح **Claude Code** أو **Codex** داخل المجلد واكتب فقط: **`شغل المشروع`** أو **`run this project`** وسيقوم بتشغيل `./start.sh` وفتح لوحة التحكم لك فوراً!).*
-
-### ⚡ تشغيل عبر الطرفية باستخدام أمر واحد فقط (One-Liner):
-يمكنك أيضاً لصق هذا السطر الواحد في الطرفية (Terminal) ليقوم بكل شيء تلقائياً من الصفر:
-```bash
-git clone https://github.com/samerquta/reel-radar.git && cd reel-radar && ./start.sh
-```
-
----
-
-## 💻 3. التشغيل العادي بضغطة واحدة
-
-تحتاج فقط إلى وجود **[Node.js](https://nodejs.org/)** مثبت على جهازك.
-
-### طريقة التشغيل المباشر:
-- **على نظام Mac أو Linux:**
-  افتح الطرفية (Terminal) داخل مجلد المشروع وشغّل الأمر:
-  ```bash
-  ./start.sh
-  ```
-- **على نظام Windows:**
-  انقر نقراً مزدوجاً على الملف:
-  ```text
-  start.bat
-  ```
-- **أو يدوياً عبر `pnpm`:**
-  ```bash
-  pnpm install
-  pnpm dev
-  ```
-
-بعد التشغيل، ستفتح الواجهة تلقائياً على الرابط:
-**[http://127.0.0.1:3000](http://127.0.0.1:3000)**
-
----
-
-## 🔑 4. طريقة استخراج مفتاح Apify بالصور (خطوة بخطوة)
+## 🔑 3. طريقة استخراج مفتاح Apify بالصور (خطوة بخطوة)
 
 تعتمد الأداة على منصة **Apify** لجلب بيانات ريلز إنستغرام العامة. يمكنك الحصول على مفتاح مجاني باتباع الخطوات الثلاث التالية:
 
@@ -109,7 +114,7 @@ git clone https://github.com/samerquta/reel-radar.git && cd reel-radar && ./star
 
 ---
 
-## 🛠️ 5. طريقة تركيب مفتاح Apify داخل الأداة
+## 🛠️ 4. طريقة تركيب مفتاح Apify داخل الأداة
 
 وفرنا لك **طريقتين سهلتين جداً** لتركيب المفتاح الخاص بك دون الحاجة لأي خبرة برمجية:
 
@@ -127,7 +132,7 @@ git clone https://github.com/samerquta/reel-radar.git && cd reel-radar && ./star
 
 ---
 
-## 🖥️ 6. شرح استخدام واجهة الويب (Dashboard)
+## 🖥️ 5. شرح استخدام واجهة الويب (Dashboard)
 
 بعد فتح **[http://127.0.0.1:3000](http://127.0.0.1:3000)** وتركيب المفتاح، يمكنك استخدام الواجهة كالتالي:
 
@@ -143,7 +148,7 @@ git clone https://github.com/samerquta/reel-radar.git && cd reel-radar && ./star
 
 ---
 
-## 📊 7. التقارير التلقائية ومخرجات النظام
+## 📊 6. التقارير التلقائية ومخرجات النظام
 
 مع كل عملية جلب أو عند تشغيل أمر التقارير، ينشئ النظام 5 ملفات داخل مجلد `./reports/`:
 
@@ -183,48 +188,47 @@ git clone https://github.com/samerquta/reel-radar.git && cd reel-radar && ./star
 
 **Reel Radar** is a local-first Instagram Viral Intelligence application that discovers public Instagram Reels, identifies creator-relative breakout videos, monitors competitor watchlists, tracks performance velocity, and generates evidence-backed research reports with an interactive web dashboard.
 
+> 💡 **Built for Zero-Friction AI Launch (`Claude Code` & `OpenAI Codex`):** You don't need to memorize terminal commands. Simply paste a single prompt into **Claude Code** or **Codex** and let the AI clone, install, and launch the entire platform for you!
+
 ---
 
-## 🤖 1. Instant Launch with Claude Code or OpenAI Codex
+## 🤖 1. Primary Launch Method: Claude Code or OpenAI Codex (Recommended)
 
-If you use **Claude Code** (`claude`), **OpenAI Codex** (`codex`), or any AI coding agent, you don't need to run manual commands. Just copy and paste the prompt below into your AI agent:
+This repository includes built-in agent instructions ([`CLAUDE.md`](./CLAUDE.md) and [`AGENTS.md`](./AGENTS.md)) so **Claude Code** (`claude`) and **OpenAI Codex** (`codex`) know how to set up and run Reel Radar automatically.
 
-### 📋 Copy & Paste into Claude Code / Codex:
+### ⭐ Option A: Start from Scratch (Zero Manual Setup)
+Open **Claude Code** or **OpenAI Codex** and **copy-paste this exact prompt**:
+
 ```text
 Clone https://github.com/samerquta/reel-radar.git, install dependencies, start the Reel Radar server on port 3000, and open http://127.0.0.1:3000 in my browser.
 ```
 
-*(If you already downloaded the project folder, just open **Claude Code** or **Codex** inside the folder and type: **`run the project`** or **`شغل النظام`** — the project includes built-in `CLAUDE.md` and `AGENTS.md` instructions so the agent knows how to launch it automatically!)*
-
-### ⚡ One-Line Terminal Command:
-```bash
-git clone https://github.com/samerquta/reel-radar.git && cd reel-radar && ./start.sh
+### ⭐ Option B: If You Already Downloaded the Folder
+Open **Claude Code** or **Codex** inside the project folder and simply type:
+```text
+run the project
 ```
+*(or in Arabic: **`شغل النظام`** — the agent will automatically install dependencies, launch the local server, and give you the dashboard link `[http://127.0.0.1:3000](http://127.0.0.1:3000)`).*
+
+<details>
+<summary><strong>💻 (Optional) Click here for manual launch without Claude Code / Codex</strong></summary>
+
+<br/>
+
+Make sure **[Node.js (LTS)](https://nodejs.org/)** is installed:
+- **One-Line Clone & Start (Mac / Linux):**
+  ```bash
+  git clone https://github.com/samerquta/reel-radar.git && cd reel-radar && ./start.sh
+  ```
+- **Mac / Linux (inside folder):** `./start.sh`
+- **Windows:** Double-click `start.bat`
+- **Manual CLI:** `pnpm install && pnpm dev` &rarr; open **[http://127.0.0.1:3000](http://127.0.0.1:3000)**
+
+</details>
 
 ---
 
-## ⚡ 2. Standard Quick Start & One-Click Launch
-
-Make sure **[Node.js (LTS)](https://nodejs.org/)** is installed on your machine.
-
-### Launch the Platform:
-- **Mac / Linux:**
-  ```bash
-  ./start.sh
-  ```
-- **Windows:**
-  Double-click `start.bat`
-- **Manual CLI:**
-  ```bash
-  pnpm install
-  pnpm dev
-  ```
-
-Once started, open **[http://127.0.0.1:3000](http://127.0.0.1:3000)** in your browser.
-
----
-
-## 🔑 3. How to Get Your Apify API Key (Step-by-Step)
+## 🔑 2. How to Get Your Apify API Key (Step-by-Step)
 
 1. **Open Apify Settings:** Log in to **[Apify Console](https://console.apify.com/)**, click **Settings** in the bottom-left sidebar &rarr; select the **API & Integrations** tab &rarr; click **`+ Create a new token`**.
    ![Step 1: Apify API & Integrations](./docs/images/apify-step-1-settings.png)
@@ -237,7 +241,7 @@ Once started, open **[http://127.0.0.1:3000](http://127.0.0.1:3000)** in your br
 
 ---
 
-## 🛠️ 4. How to Configure Your Apify Key in Reel Radar
+## 🛠️ 3. How to Configure Your Apify Key in Reel Radar
 
 You do **not** need to edit hidden `.env` files. Choose either method below:
 
@@ -253,7 +257,7 @@ You do **not** need to edit hidden `.env` files. Choose either method below:
 
 ---
 
-## 🖥️ 5. Using the Web Dashboard & CLI
+## 🖥️ 4. Using the Web Dashboard & CLI
 
 ### Web Dashboard (`http://127.0.0.1:3000`)
 - **Search & Run Scraper:** Enter comma-separated hashtags/keywords (`ai, claude, chatgpt, motion`) or Instagram handles (`@github, @vercel`) and click **Run Scraper** to trigger a live Apify job with a loading indicator.
