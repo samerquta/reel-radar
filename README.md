@@ -10,9 +10,6 @@
   <a href="https://www.instagram.com/sam_ibra1" target="_blank">
     <img src="https://img.shields.io/badge/Instagram-@sam__ibra1-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
   </a>
-  <a href="https://www.facebook.com/sam_ibra1" target="_blank">
-    <img src="https://img.shields.io/badge/Social-@sam__ibra1-0A66C2?style=for-the-badge&logo=meta&logoColor=white" alt="Social" />
-  </a>
 </p>
 
 **Reel Radar** هي أداة احترافية تعمل محلياً (Local-First) لاكتشاف مقاطع ريلز إنستغرام الفيروسية (Breakout Reels)، ومراقبة حسابات المنافسين، والبحث بالكلمات المفتاحية أو الهاشتاجات، وتحليل المحتوى بالذكاء الاصطناعي مع واجهة ويب تفاعلية وتقارير مفصلة.
@@ -146,8 +143,7 @@
 تم تصميم وتطوير هذه الأداة بواسطة **SAMER IBRAHIM**. يسعدني تواصلكم ومتابعتكم عبر الحسابات الرسمية:
 
 - **الاسم:** `SAMER IBRAHIM`
-- **فيسبوك (الحساب الأول):** [facebook.com/samibra11](https://www.facebook.com/samibra11/)
-- **فيسبوك / التواصل (`@sam_ibra1`):** [facebook.com/sam_ibra1](https://www.facebook.com/sam_ibra1)
+- **فيسبوك:** [facebook.com/samibra11](https://www.facebook.com/samibra11/)
 - **إنستغرام (`@sam_ibra1`):** [instagram.com/sam_ibra1](https://www.instagram.com/sam_ibra1)
 
 </div>
@@ -160,9 +156,6 @@
   <strong>Created & Engineered by SAMER IBRAHIM</strong><br/>
   <a href="https://www.facebook.com/samibra11/" target="_blank">
     <img src="https://img.shields.io/badge/Facebook-samibra11-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook samibra11" />
-  </a>
-  <a href="https://www.facebook.com/sam_ibra1" target="_blank">
-    <img src="https://img.shields.io/badge/Facebook-sam__ibra1-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook sam_ibra1" />
   </a>
   <a href="https://www.instagram.com/sam_ibra1" target="_blank">
     <img src="https://img.shields.io/badge/Instagram-@sam__ibra1-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram sam_ibra1" />
@@ -259,6 +252,5 @@ pnpm cli status
 Built with precision by **SAMER IBRAHIM**. Connect on social media:
 
 - **Facebook:** [https://www.facebook.com/samibra11/](https://www.facebook.com/samibra11/)
-- **Facebook / Social (`@sam_ibra1`):** [https://www.facebook.com/sam_ibra1](https://www.facebook.com/sam_ibra1)
 - **Instagram (`@sam_ibra1`):** [https://www.instagram.com/sam_ibra1](https://www.instagram.com/sam_ibra1)
 
