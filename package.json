@@ -1,0 +1,32 @@
+{
+  "name": "reel-radar",
+  "version": "1.0.0",
+  "description": "Instagram Viral Intelligence Platform — Competitor Monitoring, Viral Discovery, Outlier Scoring & Evidence-Backed Research Reports",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "tsx src/api/server.ts",
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "cli": "tsx src/cli/index.ts"
+  },
+  "dependencies": {
+    "apify-client": "^2.11.0",
+    "better-sqlite3": "^11.8.1",
+    "commander": "^13.1.0",
+    "dotenv": "^16.4.7",
+    "fastify": "^5.2.1",
+    "pino": "^9.6.0",
+    "pino-pretty": "^13.0.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/node": "^22.13.4",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.6"
+  }
+}

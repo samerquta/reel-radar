@@ -1,0 +1,24 @@
+# Node / pnpm
+node_modules/
+dist/
+.pnpm-store/
+
+# Environment & Secrets
+.env
+.env.*
+!.env.example
+apify-key.txt
+!apify-key.example.txt
+config.json
+!config.example.json
+
+# Local SQLite database & state
+data/*.sqlite
+data/*.sqlite-journal
+data/*.sqlite-wal
+data/*.sqlite-shm
+
+# Logs & Artifacts
+*.log
+coverage/
+.DS_Store

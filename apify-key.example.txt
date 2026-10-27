@@ -1,0 +1,13 @@
+# ==============================================================================
+# REEL RADAR — APIFY API KEY CONFIGURATION
+# ==============================================================================
+# 1. Get your free Apify API Token from:
+#    https://console.apify.com/account/integrations
+#
+# 2. Paste your token on the line below (replacing "PASTE_YOUR_APIFY_TOKEN_HERE"):
+#
+PASTE_YOUR_APIFY_TOKEN_HERE
+#
+# 3. Rename this file to: apify-key.txt
+#    (or create a new file named "apify-key.txt" and paste your token inside)
+# ==============================================================================
